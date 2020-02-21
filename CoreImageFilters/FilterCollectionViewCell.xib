@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FilterCollectionViewCell" customModule="CoreImageFilters" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fall.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3Ec-OK-iee">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoz-Pb-11b">
+                        <rect key="frame" x="0.0" y="134" width="150" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="cQZ-EJ-A0i"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="uoz-Pb-11b" secondAttribute="trailing" id="3An-gx-aQO"/>
+                <constraint firstAttribute="trailing" secondItem="3Ec-OK-iee" secondAttribute="trailing" id="GyR-lb-1LI"/>
+                <constraint firstItem="3Ec-OK-iee" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Qq9-Nl-akw"/>
+                <constraint firstItem="3Ec-OK-iee" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Y01-2j-CMu"/>
+                <constraint firstAttribute="bottom" secondItem="uoz-Pb-11b" secondAttribute="bottom" id="tQc-8a-QZX"/>
+                <constraint firstAttribute="bottom" secondItem="3Ec-OK-iee" secondAttribute="bottom" id="tUY-7z-o43"/>
+                <constraint firstItem="uoz-Pb-11b" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vr4-4V-Hn0"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="filterNameLabel" destination="uoz-Pb-11b" id="IH8-1l-N2S"/>
+                <outlet property="imageView" destination="3Ec-OK-iee" id="D8a-fl-noN"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="134"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="fall.jpg" width="122.40000152587891" height="81.599998474121094"/>
+    </resources>
+</document>
